@@ -1,6 +1,6 @@
 local english_on_esc = require("english_on_esc")
 local english_on_focusing = require("english_on_focusing")
-local wm = require("wm")
+dofile("paperwm_config.lua")
 
 -- Enable English input on the Esc key
 local esc_bind = english_on_esc.esc_bind
