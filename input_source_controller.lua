@@ -1,4 +1,4 @@
-M = {}
+local M = {}
 
 local function set_input_source_to_english()
     local input_english = "com.apple.keylayout.UnicodeHexInput"
@@ -9,5 +9,4 @@ local function set_input_source_to_english()
 end
 
 M.set_input_source_to_english = set_input_source_to_english
-
 return M
