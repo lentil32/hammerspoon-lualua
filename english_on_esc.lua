@@ -7,7 +7,13 @@ local esc_processing = false
 
 local function convert_to_eng_with_esc()
     esc_bind:disable()
-    input_source_controller.set_input_source_to_english()
+    
+    -- Only convert to English if current app is in whitelist
+    local currentApp = hs.application.frontmostApplication()
+    if currentApp and hs.fnutils.contains(_G.english_apps_whitelist, currentApp:name()) then
+        input_source_controller.set_input_source_to_english()
+    end
+    
     hs.eventtap.keyStroke({}, 'escape')
 
     esc_processing = false

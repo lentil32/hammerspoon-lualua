@@ -1,16 +1,10 @@
 local input_source_controller = require("input_source_controller")
 local M = {}
 
--- Applications that should switch to English input when focused
-local apps_to_include = {
-    "Emacs",
-    "Alacritty",
-}
-
 -- Check if current app is in the monitored list and set input source accordingly
 local function check_and_set_input_source()
     local currentApp = hs.application.frontmostApplication()
-    if currentApp and hs.fnutils.contains(apps_to_include, currentApp:name()) then
+    if currentApp and hs.fnutils.contains(_G.english_apps_whitelist, currentApp:name()) then
         input_source_controller.set_input_source_to_english()
     end
 end
