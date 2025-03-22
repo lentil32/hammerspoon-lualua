@@ -81,8 +81,8 @@ PaperWM = hs.loadSpoon("PaperWM")
 PaperWM.swipe_fingers = 3
 -- increase this number to make windows move farther when swiping
 PaperWM.swipe_gain = 3.0
-PaperWM.window_gap = 35          -- Matches inner.horizontal and inner.vertical = 0
-PaperWM.screen_margin = 35       -- Matches outer.left, top, right = 0; bottom = 65 not fully supported
+PaperWM.window_gap = {bottom = 65, top = 0, left = 8, right = 8}
+PaperWM.screen_margin = 35
 
 -- Bind PaperWM hotkeys, mirroring Aerospace keybindings
 PaperWM:bindHotkeys({
