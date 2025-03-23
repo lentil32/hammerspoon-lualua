@@ -82,7 +82,7 @@ PaperWM.swipe_fingers = 3
 -- increase this number to make windows move farther when swiping
 PaperWM.swipe_gain = 3.0
 PaperWM.window_gap = {bottom = 65, top = 0, left = 8, right = 8}
-PaperWM.screen_margin = 35
+PaperWM.screen_margin = 0
 
 -- Bind PaperWM hotkeys, mirroring Aerospace keybindings
 PaperWM:bindHotkeys({
@@ -90,12 +90,12 @@ PaperWM:bindHotkeys({
     focus_down = {{"ctrl", "alt", "cmd"}, "j"},
     focus_up = {{"ctrl", "alt", "cmd"}, "k"},
     focus_right = {{"ctrl", "alt", "cmd"}, "l"},
-    swap_left = {{"ctrl", "alt", "cmd", "shift"}, "h"},    -- 'move left'
-    swap_down = {{"ctrl", "alt", "cmd", "shift"}, "j"},    -- 'move down'
-    swap_up = {{"ctrl", "alt", "cmd", "shift"}, "k"},      -- 'move up'
-    swap_right = {{"ctrl", "alt", "cmd", "shift"}, "l"},   -- 'move right'
+    swap_left = {{"ctrl", "alt", "cmd", "shift"}, "h"},
+    swap_down = {{"ctrl", "alt", "cmd", "shift"}, "j"},
+    swap_up = {{"ctrl", "alt", "cmd", "shift"}, "k"},
+    swap_right = {{"ctrl", "alt", "cmd", "shift"}, "l"},
     toggle_floating = {{"ctrl", "alt", "cmd", "shift"}, "space"},
-    switch_space_1 = {{"ctrl", "alt", "cmd"}, "1"},        -- 'workspace 1'
+    switch_space_1 = {{"ctrl", "alt", "cmd"}, "1"},
     switch_space_2 = {{"ctrl", "alt", "cmd"}, "2"},
     switch_space_3 = {{"ctrl", "alt", "cmd"}, "3"},
     switch_space_4 = {{"ctrl", "alt", "cmd"}, "4"},
@@ -104,7 +104,7 @@ PaperWM:bindHotkeys({
     switch_space_7 = {{"ctrl", "alt", "cmd"}, "7"},
     switch_space_8 = {{"ctrl", "alt", "cmd"}, "8"},
     switch_space_9 = {{"ctrl", "alt", "cmd"}, "9"},
-    move_window_1 = {{"ctrl", "alt", "cmd", "shift"}, "1"}, -- 'move-node-to-workspace 1'
+    move_window_1 = {{"ctrl", "alt", "cmd", "shift"}, "1"},
     move_window_2 = {{"ctrl", "alt", "cmd", "shift"}, "2"},
     move_window_3 = {{"ctrl", "alt", "cmd", "shift"}, "3"},
     move_window_4 = {{"ctrl", "alt", "cmd", "shift"}, "4"},
