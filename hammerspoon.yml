@@ -1,0 +1,47 @@
+base: lua52
+
+globals:
+  hs:
+    property: read-only
+
+  hs.alert.show:
+    args:
+      - type: string
+
+  hs.keycodes.currentLayout:
+    args: []
+
+  hs.keycodes.currentSourceID:
+    args:
+      - required: false
+        type: string
+
+  hs.keycodes.setLayout:
+    args:
+      - type: string
+
+  hs.hotkey.new:
+    args:
+      - type: table
+      - type: string
+      - type: function
+
+  hs.eventtap.keyStroke:
+    args:
+      - type: table
+      - type: string
+
+  hs.application.frontmostApplication:
+    args: []
+
+  hs.application.watcher.activated:
+    property: read-only
+
+  hs.application.watcher.new:
+    args:
+      - type: function
+
+  hs.timer.doAfter:
+    args:
+      - type: number
+      - type: function
